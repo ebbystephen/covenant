@@ -1,0 +1,165 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8; /* Light background */
+    color: #333;
+}
+
+.app-header {
+    background-color: #007bff; /* Primary blue color */
+    color: white;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* --- Summary Bar (Top Bar) --- */
+.summary-bar {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: #e9ecef; /* Slightly darker than body */
+    border-bottom: 1px solid #dee2e6;
+    flex-wrap: wrap; /* Allows wrapping on very small screens */
+}
+
+.summary-item {
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 0.85em;
+}
+
+.summary-item .label {
+    display: block;
+    color: #6c757d;
+}
+
+.summary-item .value {
+    font-weight: 700;
+    color: #dc3545; /* Highlight for "days ago" */
+}
+
+/* --- Main Content and Date Setup --- */
+section, main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.date-setup-section, .log-container {
+    background: white;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.date-display {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #28a745; /* Success green */
+}
+
+.date-picker-container {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    flex-grow: 1;
+}
+
+.primary-button, .icon-button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.primary-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.icon-button {
+    background-color: transparent;
+    font-size: 1em;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* --- Daily Log Vertical Cards (Mobile-Friendly) --- */
+/* This is the professional idea to show items vertically */
+.day-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #495057;
+    border-bottom: 2px solid #007bff; /* Highlight border */
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-header .day-of-week {
+    font-size: 0.8em;
+    font-weight: 400;
+    color: #6c757d;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px dashed #e9ecef;
+}
+
+.task-item:last-child {
+    border-bottom: none;
+}
+
+.task-label {
+    flex-grow: 1;
+    font-size: 1em;
+    color: #343a40;
+}
+
+.task-checkbox {
+    /* Style the actual checkbox for better visibility */
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #28a745; /* Green for checked state */
+}
+
+.placeholder-text {
+    text-align: center;
+    color: #6c757d;
+    padding: 20px;
+}
