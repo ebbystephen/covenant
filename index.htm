@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-Month Covenant Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet" />
+</head>
+<body>
+
+    <header class="app-header">
+        <h1>Covenant Tracker</h1>
+    </header>
+
+    <div id="activity-summary" class="summary-bar">
+        <div class="summary-item">
+            <span class="label">Last Confession:</span>
+            <span class="value" id="summary-confession">N/A</span>
+        </div>
+        </div>
+
+    <section class="date-setup-section">
+        <h2>Covenant Start Date</h2>
+        <div id="covenant-date-display" class="date-display hidden">
+            <span id="covenant-date-text"></span>
+            <button id="edit-date-btn" class="icon-button">✏️</button>
+        </div>
+        <div id="date-picker-container">
+            <input type="date" id="covenant-date-input" required>
+            <button id="set-date-btn" class="primary-button">Set Date</button>
+        </div>
+    </section>
+
+    <hr>
+
+    <main id="daily-log-container" class="log-container">
+        <h2>Daily Log</h2>
+        <p class="placeholder-text">Please set the Covenant Start Date to begin tracking.</p>
+    </main>
+
+    <script src="js/site.js" type="text/javascript" />
+</body>
+</html>
